@@ -2,22 +2,21 @@
 
 ## Testing
 
-### Running the tunnel
-
-#### Step 1
+#### Step 1 Running the tunnel
 To run the tunnel use the syntax
 ```
 > java src/ServerTunnel.java <Listen port> <Destination host name> <Destination port>
 ```
 
-#### Step 2
+#### Step 2 Running a echo server
+The echo server should just return whatever you sent it.
 To run the echo server use syntax
 ```
 > java src/EchoServer.java <Listen port>
 ```
 
 
-#### Step 3
+#### Step 3 Connect to tunnel
 Now use netcat or nc
 
 ```
