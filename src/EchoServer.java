@@ -6,7 +6,8 @@ import java.net.Socket;
 
 public class EchoServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket ss = new ServerSocket(5555);
+        int listenPort = Integer.parseInt(args[0]);
+        ServerSocket ss = new ServerSocket(listenPort);
         while (true) {
             Socket soc = null;
             try {
